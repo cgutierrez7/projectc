@@ -4,6 +4,13 @@ import { Counter } from './features/counter/Counter';
 import './App.css';
 
 function App() {
+
+  // Testing call to backend
+  const axios = require('axios');
+    axios.get("/weatherforecast")
+    .then(response => {console.log(response)})
+    .catch((error) => {console.log(error)})
+
   return (
     <div className="App">
       <header className="App-header">
