@@ -8,10 +8,10 @@ import './App.css';
 function App() {
 
   // Testing call to backend
-  const axios = require('axios');
-    axios.get("/weatherforecast")
-    .then(response => {console.log(response)})
-    .catch((error) => {console.log(error)})
+  // const axios = require('axios');
+  //   axios.get("/weatherforecast")
+  //   .then(response => {console.log(response)})
+  //   .catch((error) => {console.log(error)})
 
   return (
     <Router>
