@@ -3,21 +3,19 @@ import SocialLink from '../features/socialLink/SocialLink';
 import {RootState} from '../app/store';
 import {connect} from 'react-redux';
 
+interface Props {
+  username: string
+}
+
 const mapStateToProps = (state: RootState) => ({
-  username: state.socialLinks.username,
-  socialLinks: state.socialLinks.socialLinks
+  username: state.socialLinks.username
 })
 
-class Friends extends React.Component {
-
-
+class Friends extends React.Component<Props, RootState> {
   render() {
     return (
       <>
-        <div>
-          Friends
-        </div>
-        {/* TODO: Test code, remove when done testing */}
+        <h1>{this.props.username}</h1>
         <SocialLink />
       </>
     )
