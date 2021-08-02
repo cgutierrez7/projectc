@@ -10,10 +10,7 @@ interface StateProps {
 
 type Props = StateProps
 
-interface State {
-
-}
-
+interface State {}
 
 const mapStateToProps = (state: RootState) => {
   return ({
